@@ -11,8 +11,9 @@ Pass prompt the question
 5. !!! After testing your code, comment it out so the prompt doesn't get in your way for the rest of the exercises.
 */
 
-
-
+const question = "What is your favorite movie?";
+let answer = prompt(question);
+console.log(answer);
 
 /* ___________________________________________________________________________
 Exercise 2: Exploring data types 
@@ -25,32 +26,33 @@ Complete the following:
 */
 
 /* Declare a variable goneFishing and assign it a boolean value of whether you have ever gone fishing.  Then print it to the console. */
-
+let goneFishing = true
+console.log('Gone fishing: ' + goneFishing)
 
 
 //Declare a variable called potato but do not assign it a value yet.  Print it to the console. What do you get?
-
-
+let potato;
+console.log('potato' + potato)
 
 //Declare a variable called sum and assign it a value of 2 + 5.  Then print it to the console.
-
-
+let sum = 2 + 5
+console.log('2 + 5 = ' + sum)
 
 //Declare a variable called nothing and assign it a value of null.  Then print it to the console.
-
-
+let nothing = null
+console.log('nothing: ' + nothing)
 
 //Declare a variable called names and assign it a value of an empty string.  Then print it to the console. 
-
-
+let names = ""
+console.log('names: ' + names)
 
 //Reassign the above names variable to the value of your middle name and print it to the console. Remember: once you've declared a variable, do not type a keyword before it again.
-
-
+names = "Duy"
+console.log('names: ' + names)
 
 //Reassign the names variable to the value of your friend's name and print it in the console.
-
-
+names = "Kenny"
+console.log('names: ' + names)
 
 
  
@@ -60,22 +62,24 @@ _______________________________________________________________________________
 Exercise 3: Type Coercion & Type conversion */
 
 //1. Declare a variable num with a number value
-
+let num = 67
 
 //2. Declare a variable called string with the same value but put quotation marks around it.
-
+let string = "33"
 
 /*3. Declare a third variable, mix, with value of the first variable added to the second: num + string
 Print the third variable to console. */
-
+let mix = num + string
+console.log('mixed results: ' + mix)
 
 
 // Use the tyeof operator to find the data type of mix and print it to the console.
-
+console.log('mixed datatype: ' + typeof mix)
 
 
 //Reassign the value of the mix variable to an actual sum of 2 numbers. Pass the string variable to parseInt() and add the num variables. Log the result it in the console.
-
+mix = num + parseInt(string)
+console.log('mixed datatype after conversion: ' + typeof mix)
 
 
 
@@ -87,13 +91,16 @@ Exercise 4: String Concatenation & Interpolation
 2. Declare a third variable with a string value that concatenates the first 2 variables into this sentence:
 "I love var2, I have var1 of them in my backyard."
 3. Print the third variable in the console*/
+let numAnimals = 7
+let animalType = "donkeys"
 
-
+let brag = "I love " + animalType + ", I have " + numAnimals + " of them in my backyard."
+console.log(brag)
 
 // Interpolation or template literal syntax
 //4. Reassign the third variable above. Use template literal syntax instead of the plus sign to create the same sentence. Print it to the console.
-
-
+brag = `I love ${animalType}, I have ${numAnimals} of them in my backyard.`
+console.log(brag)
 
 /*
 __________________________________________________________________________
