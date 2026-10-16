@@ -12,8 +12,8 @@ Pass prompt the question
 */
 
 const question = "What is your favorite movie?";
-let answer = prompt(question);
-console.log(answer);
+// let answer = prompt(question);
+// console.log(answer);
 
 /* ___________________________________________________________________________
 Exercise 2: Exploring data types 
@@ -107,35 +107,48 @@ __________________________________________________________________________
 Exercise 5: Arithmetic Operators */
 
 //1. Declare 2 variables, num1 and num2, and give them number values.
+let num1 = 11
+let num2 = 22
 
 //2. Declare a third variable, total, and give it a value of num1 + num2
 //Print total to the console using template literal syntax to show the entire equation
+let total = num1 + num2
+console.log(`${num1} + ${num2} = ${total}`)
 
 //3. Reassign total to the value of num1 multiplied by num2 
 //Print total to the console using template literal syntax to show the entire equation
 //Repeat the last step for division and subtraction
-
-
+total = num1 * num2
+console.log(`${num1} * ${num2} = ${total}`)
  
+total = num1 / num2
+console.log(`${num1} / ${num2} = ${total}`)
 
+total = num1 - num2
+console.log(`${num1} - ${num2} = ${total}`)
 /*
 ____________________________________________________________________________
 Exercise 6: Incrementer & Decrementer Operators */
 
 //1. Declare a variable: counter, set its value to 0
-
+let counter = 0
 
 
 //2. Reassign the value of counter to itself plus 1 and print it to the console
-
+counter += 1
+console.log(`counter: ${counter}`)
 
 
 //3. Reassign the value of counter using an operator to increment it by 1 and print it to the console
-
+counter += 1
+console.log(`counter: ${counter}`)
 
 
 //4. Reassign the value of counter using an operator to decrement it by 1 and print it to the console
-
+counter -= 1
+console.log(`counter: ${counter}`)
 
 
 //5. Reassign the value of counter using the ++ operator and print it to the console
+counter++
+console.log(`counter: ${counter}`)
