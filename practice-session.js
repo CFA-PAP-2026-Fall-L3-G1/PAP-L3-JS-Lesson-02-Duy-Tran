@@ -15,8 +15,14 @@ Assign the output of the prompt function to the second variable and use parseInt
 3. Create a fourth variable to store the total cost of bunnies. Give it a value of the calculation to get the total cost using the variables you made earlier.
 4. Log the total cost in the console, concatenate it with a string like: "Your order of ___ bunnies will cost $___."
 */
+let cost = 50
+let bunnies
+let bunnyQuestion = "How many bunnies do you want?"
 
+bunnies = parseInt(prompt(bunnyQuestion))
+let totalCost = cost * bunnies
 
+console.log(`Your order of ${bunnies} bunnies will cost $${totalCost}.`)
 
 /* 
 Exercise 3
@@ -24,3 +30,9 @@ Exercise 3
 2. Create another variable for adjusted total cost, give it a value of 10% off the total cost from exercise 2.
 3. Show the new total in an alert dialogue box, concatenate it with a string like:  "After applying your 10 percent discount, your order of ___ bunnies will cost $___."
 */
+
+let promo = prompt("Enter your promo code:")
+
+newTotal = totalCost * 0.9
+
+console.log(`After applying your 10 percent discount, your order of ${bunnies} bunnies will cost $${newTotal}.`)
